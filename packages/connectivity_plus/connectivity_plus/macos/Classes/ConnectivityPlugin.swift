@@ -27,9 +27,7 @@ public class ConnectivityPlugin: NSObject, FlutterPlugin, FlutterStreamHandler {
     let connectivityProvider: ConnectivityProvider
     if #available(macOS 10.14, *) {
       connectivityProvider = PathMonitorConnectivityProvider()
-    } else {
-      connectivityProvider = ReachabilityConnectivityProvider()
-    }
+    } 
 
     let instance = ConnectivityPlugin(connectivityProvider: connectivityProvider)
     streamChannel.setStreamHandler(instance)

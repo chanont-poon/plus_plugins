@@ -15,7 +15,6 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://pub.dev/packages/connectivity_plus'
   s.source_files     = 'Classes/**/*'
   s.dependency 'FlutterMacOS'
-  s.dependency 'ReachabilitySwift'
 
   s.platform = :osx
   s.osx.deployment_target = '10.11'
